@@ -9,7 +9,7 @@ docker run -p 8080:8080 aemrezorlu/forexrateconverter
 -Conversion
 
 
-![](/docs/fx.drawio.jpg?raw=true "Title")
+![](/docs/fx.jpg?raw=true "Title")
 
 **DESIGN shown above**
 
