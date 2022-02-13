@@ -13,5 +13,4 @@ public class ResponseDTO<T> {
 	private T data;
 	private HttpStatus httpStatus;
 
-	// can be added error message or transaction status
 }

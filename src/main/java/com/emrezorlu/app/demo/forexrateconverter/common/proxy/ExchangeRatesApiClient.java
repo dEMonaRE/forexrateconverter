@@ -14,6 +14,14 @@ public interface ExchangeRatesApiClient {
 	@GetMapping("/latest")
 	ResponseApiLatestRates getExchangeRates(@RequestParam("access_key") String accessKey);
 
+	@GetMapping("/latest")
+	ResponseApiLatestRates getAllExchangeRates(@RequestParam("access_key") String accessKey,
+			@RequestParam("base") String from);
+
+	@GetMapping("/latest")
+	ResponseApiLatestRates getExchangeRate(@RequestParam("access_key") String accessKey,
+			@RequestParam("base") String from, @RequestParam("symbols") String to);
+
 	@GetMapping("/convert")
 	ResponseApiLatestRates convertRates(@RequestParam("access_key") String accessKey);
 
