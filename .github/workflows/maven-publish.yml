@@ -7,9 +7,8 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - name: step1 - checkout branch from github
       - uses: actions/checkout@v2
-      - name: step2 - setup java 11
+      - name: step12 - checkout branch from github + java
       - uses: actions/setup-java@v1
         with:
           java-version: 11
