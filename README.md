@@ -21,7 +21,7 @@ docker run -p 8080:8080 aemrezorlu/forexrateconverter
 - **Lombok+Mapper**
 - **MongoDB**
 - **Springdoc** 1.6.6 due to dockletApi error of Swagger on spring 2.6.3 :arrow_right: http://localhost:8080/swagger-ui/index.html#/
-- **Docker** :arrow_right: https://hub.docker.com/repository/docker/aemrezorlu/readingisgood/general
+- **Docker** :arrow_right: https://hub.docker.com/repository/docker/aemrezorlu/forexrateconverter/general
 
 	docker images
 	docker run -p 8080:8080 aemrezorlu/forexrateconverter
