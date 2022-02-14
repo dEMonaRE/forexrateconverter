@@ -16,9 +16,9 @@ public enum ErrorCode {
 	FEIGN_CLIENT_ERROR(1101), //
 	INTERNAL_ERROR(2000);
 
-	private final int code;
+	private final Integer code;
 
-	ErrorCode(int code) {
+	ErrorCode(Integer code) {
 		this.code = code;
 	}
 

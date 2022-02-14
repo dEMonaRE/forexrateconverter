@@ -1,11 +1,13 @@
 package com.emrezorlu.app.demo.forexrateconverter.common.datamodel;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 
 @AllArgsConstructor
 @Getter
-public class ErrorResponse {
+@Builder
+public class ResponseError {
 	private String errorMessage;
-	private int errorCode;
+	private Integer errorCode;
 }

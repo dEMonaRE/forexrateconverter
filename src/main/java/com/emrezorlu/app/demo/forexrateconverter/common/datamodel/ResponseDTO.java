@@ -12,5 +12,4 @@ import lombok.NoArgsConstructor;
 public class ResponseDTO<T> {
 	private T data;
 	private HttpStatus httpStatus;
-
 }
