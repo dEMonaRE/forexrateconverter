@@ -28,7 +28,7 @@ public interface ExchangeRatesApiClient {
 	@Cacheable(value = "symbols")
 	ResponseApiSymbols getSymbols(@RequestParam("access_key") String accessKey);
 
-	// Convert Api wont work on free subscription
+	/*** Convert Api wont work on free subscription */
 	// @GetMapping("/convert")
 	// ResponseApiConvertRate convertRates(@RequestParam("access_key") String
 	// accessKey);

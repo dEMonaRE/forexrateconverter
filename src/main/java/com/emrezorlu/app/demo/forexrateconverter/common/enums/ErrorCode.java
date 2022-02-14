@@ -11,7 +11,8 @@ public enum ErrorCode {
 	INVALID_EXCHANGE_PAIR(1002), //
 	INVALID_ARGUMENTS(1003), //
 	INVALID_TRANSACTION_ID(1004), //
-	NO_TRANSACTIONS_FOR_PERIOD(1005), //
+	NO_TRANSACTIONS_FOR_PERIOD(1201), //
+	NO_TRANSACTION_BY_ID(1202), //
 	FEIGN_CLIENT_ERROR(1101), //
 	INTERNAL_ERROR(2000);
 
@@ -26,8 +27,10 @@ public enum ErrorCode {
 			return HttpStatus.BAD_REQUEST;
 		} else if (errorCode.code >= 2000 && errorCode.code < 3000) {
 			return HttpStatus.INTERNAL_SERVER_ERROR;
-		} else if (errorCode.code >= 1100 && errorCode.code < 2000) {
+		} else if (errorCode.code >= 1100 && errorCode.code < 1200) {
 			return HttpStatus.SEE_OTHER;
+		} else if (errorCode.code >= 1200 && errorCode.code < 2000) {
+			return HttpStatus.NOT_FOUND;
 		} else {
 			return HttpStatus.INTERNAL_SERVER_ERROR;
 		}
