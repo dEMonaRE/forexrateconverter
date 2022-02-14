@@ -16,8 +16,8 @@ import com.emrezorlu.app.demo.forexrateconverter.common.enums.ErrorCode;
 import feign.FeignException;
 import lombok.extern.slf4j.Slf4j;
 
-@ControllerAdvice
 @Slf4j
+@ControllerAdvice
 public class ControllerExceptionHandler extends ResponseEntityExceptionHandler {
 
 	@ExceptionHandler(value = BusinessException.class)
