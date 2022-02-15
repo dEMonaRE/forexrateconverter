@@ -5,9 +5,11 @@ import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.HashMap;
 
+import lombok.Builder;
 import lombok.Data;
 
 @Data
+@Builder
 public class ResponseRate {
 	private String base;
 	private boolean success;

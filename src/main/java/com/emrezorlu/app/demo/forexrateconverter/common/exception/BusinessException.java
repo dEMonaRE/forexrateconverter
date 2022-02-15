@@ -12,7 +12,7 @@ public class BusinessException extends RuntimeException {
 
 	public BusinessException(String message) {
 		super(message);
-		this.errorCode = ErrorCode.UNHANDLED;
+		this.errorCode = ErrorCode.GENERIC;
 	}
 
 	public BusinessException(String message, ErrorCode errorCode) {

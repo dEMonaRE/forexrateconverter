@@ -4,6 +4,9 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.emrezorlu.app.demo.forexrateconverter.common.enums.Currency;
+import com.emrezorlu.app.demo.forexrateconverter.common.enums.ErrorCode;
+import com.emrezorlu.app.demo.forexrateconverter.common.exception.BusinessException;
 import com.emrezorlu.app.demo.forexrateconverter.common.external.response.ResponseApiLatestRates;
 import com.emrezorlu.app.demo.forexrateconverter.common.external.response.ResponseApiSymbols;
 import com.emrezorlu.app.demo.forexrateconverter.common.proxy.ExchangeRatesApiClient;
@@ -35,22 +38,30 @@ public class FxRateServiceImpl implements FxRateService {
 
 	@Override
 	public ResponseRate getAllExchangeRates(String sourceCurrency) {
-		ResponseApiLatestRates exchangeRates = exchangeRatesApiClient.getAllExchangeRates(apiProperties.getApiKey(),
-				sourceCurrency);
-		ResponseRate responseRate = modelMapper.map(exchangeRates, ResponseRate.class);
-		responseRate.setLocalDateTime(DateUtils.convertToLocalDateTime(responseRate.getTimestamp()));
-		saveRates(modelMapper.map(responseRate, FxRate.class));
+		ResponseRate responseRate = ResponseRate.builder().build();
+		if (checkSourceSymbol(sourceCurrency)) {
+
+			ResponseApiLatestRates exchangeRates = exchangeRatesApiClient.getAllExchangeRates(apiProperties.getApiKey(),
+					sourceCurrency);
+			responseRate = modelMapper.map(exchangeRates, ResponseRate.class);
+			responseRate.setLocalDateTime(DateUtils.convertToLocalDateTime(responseRate.getTimestamp()));
+			saveRates(modelMapper.map(responseRate, FxRate.class));
+		}
 		return responseRate;
 
 	}
 
 	@Override
 	public ResponseRate getExchangeRate(String sourceCurrency, String targetCurrency) {
-		ResponseApiLatestRates exchangeRates = exchangeRatesApiClient.getExchangeRate(apiProperties.getApiKey(),
-				sourceCurrency, targetCurrency);
-		ResponseRate responseRate = modelMapper.map(exchangeRates, ResponseRate.class);
-		responseRate.setLocalDateTime(DateUtils.convertToLocalDateTime(responseRate.getTimestamp()));
-		saveRates(modelMapper.map(responseRate, FxRate.class));
+		ResponseRate responseRate = ResponseRate.builder().build();
+		if (checkSourceSymbol(sourceCurrency) && checkTargetSymbol(targetCurrency)) {
+
+			ResponseApiLatestRates exchangeRates = exchangeRatesApiClient.getExchangeRate(apiProperties.getApiKey(),
+					sourceCurrency, targetCurrency);
+			responseRate = modelMapper.map(exchangeRates, ResponseRate.class);
+			responseRate.setLocalDateTime(DateUtils.convertToLocalDateTime(responseRate.getTimestamp()));
+			saveRates(modelMapper.map(responseRate, FxRate.class));
+		}
 		return responseRate;
 
 	}
@@ -64,5 +75,26 @@ public class FxRateServiceImpl implements FxRateService {
 	public ResponseApiSymbols getSymbols() {
 //		Cache cache = cacheManager.getCache("symbols");
 		return exchangeRatesApiClient.getSymbols(apiProperties.getApiKey());
+	}
+
+	private boolean checkSourceSymbol(String currency) {
+		// Assumption : get latest rates and convert manually
+		if (!Currency.EUR.name().equals(currency)) {
+			throw new BusinessException("EUR should be used for Source Currency", ErrorCode.INVALID_CURRENCY_SYMBOL);
+		}
+		return true;
+	}
+
+	private boolean checkTargetSymbol(String currency) {
+		// Assumption : external symbol service CACHED for extensive usage
+		ResponseApiSymbols responseSymbols = exchangeRatesApiClient.getSymbols(apiProperties.getApiKey());
+
+		boolean isTargetCurrencyExists = responseSymbols.getSymbols().containsKey(currency);
+
+		if (!isTargetCurrencyExists) {
+			throw new BusinessException("Target Currency not exists", ErrorCode.INVALID_CURRENCY_SYMBOL);
+		}
+
+		return true;
 	}
 }

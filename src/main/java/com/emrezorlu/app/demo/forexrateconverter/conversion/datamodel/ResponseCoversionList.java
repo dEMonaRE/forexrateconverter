@@ -9,7 +9,7 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 @Builder
-public class ResponseCoversionInterval {
+public class ResponseCoversionList {
 	private List<Conversion> conversion;
 
 }

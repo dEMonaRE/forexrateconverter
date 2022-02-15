@@ -1,6 +1,7 @@
 package com.emrezorlu.app.demo.forexrateconverter.controller;
 
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -30,15 +31,15 @@ public class FxRateController {
 	@Operation(summary = "getAllExchangeRates")
 	@GetMapping(path = "/getAllRates")
 	public ResponseDTO<ResponseRate> getAllRates(
-			@RequestParam(value = "sourceCurrency", required = true) @NotBlank String sourceCurrency) {
+			@RequestParam(value = "sourceCurrency", required = true) @NotBlank(message = "Source currency should not be null") @Size(min = 3, max = 3, message = "Currency Code should be ISO 4217 standarts") String sourceCurrency) {
 		return new ResponseDTO<>(fxRateService.getAllExchangeRates(sourceCurrency), HttpStatus.OK);
 	}
 
 	@Operation(summary = "getRate")
 	@GetMapping(path = "/getRate")
 	public ResponseDTO<ResponseRate> getRate(
-			@RequestParam(value = "sourceCurrency", required = true) @NotBlank String sourceCurrency,
-			@RequestParam(value = "targetCurrency", required = true) @NotBlank String targetCurrency) {
+			@RequestParam(value = "sourceCurrency", required = true) @NotBlank(message = "Source currency should not be null") @Size(min = 3, max = 3, message = "Currency Code should be ISO 4217 standarts") String sourceCurrency,
+			@RequestParam(value = "targetCurrency", required = true) @NotBlank(message = "Target currency should not be null") @Size(min = 3, max = 3, message = "Currency Code should be ISO 4217 standarts") String targetCurrency) {
 		return new ResponseDTO<>(fxRateService.getExchangeRate(sourceCurrency, targetCurrency), HttpStatus.OK);
 	}
 

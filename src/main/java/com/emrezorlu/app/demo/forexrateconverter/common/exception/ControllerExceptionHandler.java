@@ -38,8 +38,8 @@ public class ControllerExceptionHandler extends ResponseEntityExceptionHandler {
 
 	@ExceptionHandler(value = RuntimeException.class)
 	protected ResponseEntity<Object> handleRuntimeException(RuntimeException ex, WebRequest request) {
-		ResponseError body = new ResponseError(ex.getMessage(), ErrorCode.UNHANDLED.getCode());
-		HttpStatus httpStatus = ErrorCode.getHttpStatus(ErrorCode.UNHANDLED);
+		ResponseError body = new ResponseError(ex.getMessage(), ErrorCode.GENERIC.getCode());
+		HttpStatus httpStatus = ErrorCode.getHttpStatus(ErrorCode.GENERIC);
 		log.error(ex.getMessage(), ex);
 		return handleExceptionInternal(ex, body, new HttpHeaders(), httpStatus, request);
 	}
