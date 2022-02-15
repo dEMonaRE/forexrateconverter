@@ -6,6 +6,8 @@ import java.util.Date;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.format.annotation.DateTimeFormat.ISO;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -27,5 +29,6 @@ public class ConversionEntity {
 	private BigDecimal amount;
 	private Long timestamp;
 	private LocalDateTime localDateTime;
+	@DateTimeFormat(iso = ISO.DATE)
 	private Date date;
 }
