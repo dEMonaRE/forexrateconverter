@@ -33,8 +33,6 @@ public class FxRateServiceImpl implements FxRateService {
 	ExchangeRatesApiClient exchangeRatesApiClient;
 	@Autowired
 	ExchangeRateApiProperties apiProperties;
-//	@Autowired
-//	CacheManager cacheManager;
 
 	@Override
 	public ResponseRate getAllExchangeRates(String sourceCurrency) {
@@ -68,7 +66,6 @@ public class FxRateServiceImpl implements FxRateService {
 
 	@Override
 	public ResponseApiSymbols getSymbols() {
-//		Cache cache = cacheManager.getCache("symbols");
 		return exchangeRatesApiClient.getSymbols(apiProperties.getApiKey());
 	}
 

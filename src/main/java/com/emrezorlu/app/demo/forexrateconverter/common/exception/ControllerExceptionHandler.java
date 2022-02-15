@@ -52,13 +52,4 @@ public class ControllerExceptionHandler extends ResponseEntityExceptionHandler {
 		return handleExceptionInternal(ex, body, new HttpHeaders(), httpStatus, request);
 	}
 
-//	@ExceptionHandler(value = MethodArgumentNotValidException.class)
-//	protected ResponseEntity<Object> handleMethodArgumentNotValid(MethodArgumentNotValidException ex,
-//			WebRequest request) {
-//		ErrorResponse body = new ErrorResponse(ex.getMessage(), ErrorCode.INVALID_ARGUMENTS.getCode());
-//		HttpStatus httpStatus = ErrorCode.getHttpStatus(ErrorCode.INVALID_ARGUMENTS);
-//		log.error(ex.getMessage(), ex);
-//		return handleExceptionInternal(ex, body, new HttpHeaders(), httpStatus, request);
-//	}
-
 }

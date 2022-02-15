@@ -14,9 +14,6 @@ import com.emrezorlu.app.demo.forexrateconverter.common.external.response.Respon
 public interface ExchangeRatesApiClient {
 
 	@GetMapping("/latest")
-	ResponseApiLatestRates getExchangeRates(@RequestParam("access_key") String accessKey);
-
-	@GetMapping("/latest")
 	ResponseApiLatestRates getAllExchangeRates(@RequestParam("access_key") String accessKey,
 			@RequestParam("base") String from);
 
