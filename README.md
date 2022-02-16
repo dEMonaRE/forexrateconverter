@@ -1,12 +1,8 @@
 # forexrateconverter
-fx rate converter api
 
+- Exchanges Rate
 
-docker run -p 8080:8080 aemrezorlu/forexrateconverter 
-@TODO
--Exchange Rate
-
--Conversion
+- Converts currency
 
 
 ![](/docs/fxRateDesign.jpg?raw=true "Title")
@@ -25,5 +21,5 @@ docker run -p 8080:8080 aemrezorlu/forexrateconverter
 
 			docker pull aemrezorlu/forex-rate-converter:latest
 	
-			docker run -p 8080:8080 aemrezorlu/forexrateconverter
+			docker run -p 8080:8080 aemrezorlu/forex-rate-converter
 - **Postman** 2.1 :arrow_right: /docs/Forex.postman_collection.json
