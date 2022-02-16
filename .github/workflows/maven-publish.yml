@@ -37,7 +37,7 @@ jobs:
         run: mvn clean install
       - uses: mr-smithers-excellent/docker-build-push@v5
         name: Build & Push Docker image
-            with:
+        with:
                 image: aemrezorlu/forex-rate-converter
                 tags: latest
                 registry: docker.io
