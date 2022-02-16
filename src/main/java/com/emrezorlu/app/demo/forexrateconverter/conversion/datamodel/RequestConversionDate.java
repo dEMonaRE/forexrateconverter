@@ -9,9 +9,11 @@ import org.springframework.format.annotation.DateTimeFormat;
 import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 
 @Data
 @EqualsAndHashCode(callSuper = true)
+@NoArgsConstructor
 public class RequestConversionDate extends RequestPaging {
 
 	@Builder(builderMethodName = "builderRequestDate")

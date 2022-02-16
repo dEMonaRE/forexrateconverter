@@ -14,10 +14,12 @@ import com.emrezorlu.app.demo.forexrateconverter.common.datamodel.ResponseError;
 import com.emrezorlu.app.demo.forexrateconverter.common.enums.ErrorCode;
 
 import feign.FeignException;
+import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @ControllerAdvice
+@NoArgsConstructor
 public class ControllerExceptionHandler extends ResponseEntityExceptionHandler {
 
 	@ExceptionHandler(value = BusinessException.class)
