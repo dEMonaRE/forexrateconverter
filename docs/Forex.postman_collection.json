@@ -1,0 +1,2027 @@
+{
+	"info": {
+		"_postman_id": "c7459253-65ec-4cf1-8233-8490399c4e19",
+		"name": "Forex",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get latest rates from api Client",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api.exchangeratesapi.io/v1/latest?access_key=bbd7d4745e0545c06fcf7428d583a6b9&base=EUR",
+					"protocol": "http",
+					"host": [
+						"api",
+						"exchangeratesapi",
+						"io"
+					],
+					"path": [
+						"v1",
+						"latest"
+					],
+					"query": [
+						{
+							"key": "access_key",
+							"value": "bbd7d4745e0545c06fcf7428d583a6b9"
+						},
+						{
+							"key": "base",
+							"value": "EUR"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get latest rates from api",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://api.exchangeratesapi.io/v1/latest?access_key=bbd7d4745e0545c06fcf7428d583a6b9&base=EUR",
+							"protocol": "http",
+							"host": [
+								"api",
+								"exchangeratesapi",
+								"io"
+							],
+							"path": [
+								"v1",
+								"latest"
+							],
+							"query": [
+								{
+									"key": "access_key",
+									"value": "bbd7d4745e0545c06fcf7428d583a6b9"
+								},
+								{
+									"key": "base",
+									"value": "EUR"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 12 Feb 2022 16:45:08 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; Charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-apilayer-transaction-id",
+							"value": "a7480ced-57b7-4503-9e98-fc8313fe814d"
+						},
+						{
+							"key": "access-control-allow-methods",
+							"value": "GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "x-request-time",
+							"value": "0.010"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=JcNNWaUm4TUWOE8NnDmqpKtDr4WCk2H2xvx7srHVaDohmfLVB79gsoS2ZMKg1xszZwIgnbRMseHEPhsfOVLLk9lADKJezZtpHMrWZFGUpiyhogcrwO4ffbhZxkdfdSCSN%2B6ZsDPxogdA\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "6dc7491e1b65da3e-IST"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"timestamp\": 1644684302,\n    \"base\": \"EUR\",\n    \"date\": \"2022-02-12\",\n    \"rates\": {\n        \"AED\": 4.168752,\n        \"AFN\": 104.900894,\n        \"ALL\": 121.441034,\n        \"AMD\": 546.954659,\n        \"ANG\": 2.053617,\n        \"AOA\": 598.962712,\n        \"ARS\": 120.803029,\n        \"AUD\": 1.590442,\n        \"AWG\": 2.043175,\n        \"AZN\": 1.933903,\n        \"BAM\": 1.955847,\n        \"BBD\": 2.30072,\n        \"BDT\": 97.967634,\n        \"BGN\": 1.948435,\n        \"BHD\": 0.427904,\n        \"BIF\": 2276.819393,\n        \"BMD\": 1.13494,\n        \"BND\": 1.531713,\n        \"BOB\": 7.845367,\n        \"BRL\": 5.962951,\n        \"BSD\": 1.13951,\n        \"BTC\": 0.000026570257,\n        \"BTN\": 85.75283,\n        \"BWP\": 13.120212,\n        \"BYN\": 2.913125,\n        \"BYR\": 22244.817475,\n        \"BZD\": 2.29692,\n        \"CAD\": 1.445448,\n        \"CDF\": 2286.90384,\n        \"CHF\": 1.051115,\n        \"CLF\": 0.033151,\n        \"CLP\": 914.725391,\n        \"CNY\": 7.212092,\n        \"COP\": 4471.338086,\n        \"CRC\": 732.476239,\n        \"CUC\": 1.13494,\n        \"CUP\": 30.075901,\n        \"CVE\": 110.265939,\n        \"CZK\": 24.563844,\n        \"DJF\": 202.861728,\n        \"DKK\": 7.440329,\n        \"DOP\": 65.155555,\n        \"DZD\": 159.834734,\n        \"EGP\": 17.832152,\n        \"ERN\": 17.024117,\n        \"ETB\": 57.342188,\n        \"EUR\": 1,\n        \"FJD\": 2.422533,\n        \"FKP\": 0.826145,\n        \"GBP\": 0.836822,\n        \"GEL\": 3.325817,\n        \"GGP\": 0.826145,\n        \"GHS\": 7.304162,\n        \"GIP\": 0.826145,\n        \"GMD\": 60.26967,\n        \"GNF\": 10274.787518,\n        \"GTQ\": 8.762675,\n        \"GYD\": 238.402031,\n        \"HKD\": 8.85308,\n        \"HNL\": 28.055239,\n        \"HRK\": 7.531505,\n        \"HTG\": 116.497992,\n        \"HUF\": 356.450941,\n        \"IDR\": 16280.425789,\n        \"ILS\": 3.672257,\n        \"IMP\": 0.826145,\n        \"INR\": 85.516006,\n        \"IQD\": 1663.084166,\n        \"IRR\": 47951.201335,\n        \"ISK\": 141.890595,\n        \"JEP\": 0.826145,\n        \"JMD\": 179.104526,\n        \"JOD\": 0.804717,\n        \"JPY\": 131.536147,\n        \"KES\": 129.446003,\n        \"KGS\": 96.22541,\n        \"KHR\": 4636.539493,\n        \"KMF\": 490.351119,\n        \"KPW\": 1021.445879,\n        \"KRW\": 1361.694983,\n        \"KWD\": 0.343036,\n        \"KYD\": 0.949608,\n        \"KZT\": 490.034174,\n        \"LAK\": 12944.610258,\n        \"LBP\": 1723.114677,\n        \"LKR\": 230.746665,\n        \"LRD\": 174.331017,\n        \"LSL\": 17.274215,\n        \"LTL\": 3.351182,\n        \"LVL\": 0.686514,\n        \"LYD\": 5.221644,\n        \"MAD\": 10.640891,\n        \"MDL\": 20.282873,\n        \"MGA\": 4538.018654,\n        \"MKD\": 61.630525,\n        \"MMK\": 2026.069857,\n        \"MNT\": 3244.60089,\n        \"MOP\": 9.154978,\n        \"MRO\": 405.173266,\n        \"MUR\": 49.660423,\n        \"MVR\": 17.535247,\n        \"MWK\": 913.243779,\n        \"MXN\": 23.317166,\n        \"MYR\": 4.754834,\n        \"MZN\": 72.443627,\n        \"NAD\": 17.27421,\n        \"NGN\": 473.281618,\n        \"NIO\": 40.400344,\n        \"NOK\": 10.093477,\n        \"NPR\": 137.204169,\n        \"NZD\": 1.706805,\n        \"OMR\": 0.436974,\n        \"PAB\": 1.13951,\n        \"PEN\": 4.260936,\n        \"PGK\": 4.035734,\n        \"PHP\": 58.185496,\n        \"PKR\": 199.011895,\n        \"PLN\": 4.572613,\n        \"PYG\": 7942.967656,\n        \"QAR\": 4.132359,\n        \"RON\": 4.945958,\n        \"RSD\": 117.557475,\n        \"RUB\": 87.15588,\n        \"RWF\": 1184.520089,\n        \"SAR\": 4.258075,\n        \"SBD\": 9.178684,\n        \"SCR\": 14.852127,\n        \"SDG\": 502.214977,\n        \"SEK\": 10.603413,\n        \"SGD\": 1.52957,\n        \"SHP\": 1.56327,\n        \"SLL\": 13068.830651,\n        \"SOS\": 662.80515,\n        \"SRD\": 23.11309,\n        \"STD\": 23490.959675,\n        \"SVC\": 9.971085,\n        \"SYP\": 2850.968189,\n        \"SZL\": 17.247647,\n        \"THB\": 37.128459,\n        \"TJS\": 12.87051,\n        \"TMT\": 3.972289,\n        \"TND\": 3.273209,\n        \"TOP\": 2.573987,\n        \"TRY\": 15.344502,\n        \"TTD\": 7.744366,\n        \"TWD\": 31.675074,\n        \"TZS\": 2635.64245,\n        \"UAH\": 31.930172,\n        \"UGX\": 4013.234184,\n        \"USD\": 1.13494,\n        \"UYU\": 49.28342,\n        \"UZS\": 12364.87532,\n        \"VEF\": 242684401354.12613,\n        \"VND\": 25748.943697,\n        \"VUV\": 129.010197,\n        \"WST\": 2.964852,\n        \"XAF\": 655.962587,\n        \"XAG\": 0.0504,\n        \"XAU\": 0.000628,\n        \"XCD\": 3.067232,\n        \"XDR\": 0.811707,\n        \"XOF\": 655.962587,\n        \"XPF\": 119.679801,\n        \"YER\": 284.019065,\n        \"ZAR\": 17.270026,\n        \"ZMK\": 10215.823009,\n        \"ZMW\": 21.376782,\n        \"ZWL\": 365.45011\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "conversion api Client",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api.exchangeratesapi.io/v1/convert?access_key=bbd7d4745e0545c06fcf7428d583a6b9&from=EUR&to=JPY&amount=25",
+					"protocol": "http",
+					"host": [
+						"api",
+						"exchangeratesapi",
+						"io"
+					],
+					"path": [
+						"v1",
+						"convert"
+					],
+					"query": [
+						{
+							"key": "access_key",
+							"value": "bbd7d4745e0545c06fcf7428d583a6b9"
+						},
+						{
+							"key": "from",
+							"value": "EUR"
+						},
+						{
+							"key": "to",
+							"value": "JPY"
+						},
+						{
+							"key": "amount",
+							"value": "25"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "api free plan conversion response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://api.exchangeratesapi.io/v1/convert?access_key=bbd7d4745e0545c06fcf7428d583a6b9&from=EUR&to=JPY&amount=25",
+							"protocol": "http",
+							"host": [
+								"api",
+								"exchangeratesapi",
+								"io"
+							],
+							"path": [
+								"v1",
+								"convert"
+							],
+							"query": [
+								{
+									"key": "access_key",
+									"value": "bbd7d4745e0545c06fcf7428d583a6b9"
+								},
+								{
+									"key": "from",
+									"value": "EUR"
+								},
+								{
+									"key": "to",
+									"value": "JPY"
+								},
+								{
+									"key": "amount",
+									"value": "25"
+								}
+							]
+						}
+					},
+					"status": "Forbidden",
+					"code": 403,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 12 Feb 2022 19:15:49 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; Charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-apilayer-transaction-id",
+							"value": "84298b36-9043-4594-b966-d6ea04beda24"
+						},
+						{
+							"key": "access-control-allow-methods",
+							"value": "GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=ApdJWqFGp4z%2Bas3UzMwc97aYj3wSkNcvvLx8N9CaMMBP%2F98%2Bq7EapZAY1LhKYNThAVEX2RXsEDvITb1bONFZhexlKwMVpMREKsOIxm%2FRclGAg8BRpl6AWQLw15iqpyCnl%2B61a9LnVDXK\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "6dc825d70f03e17e-IST"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": {\n        \"code\": \"function_access_restricted\",\n        \"message\": \"Access Restricted - Your current Subscription Plan does not support this API Function.\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "getAllExchangeRates",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/fxrate/getAllRates?from=EUR",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fxrate",
+						"getAllRates"
+					],
+					"query": [
+						{
+							"key": "from",
+							"value": "EUR"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getAllExchangeRates",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/fxrate/getAllRates?sourceCurrency=EUR",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fxrate",
+								"getAllRates"
+							],
+							"query": [
+								{
+									"key": "sourceCurrency",
+									"value": "EUR"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 12 Feb 2022 19:43:44 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"base\": \"EUR\",\n        \"success\": true,\n        \"timestamp\": 1644694862,\n        \"localDateTime\": \"2022-02-12T22:41:02\",\n        \"date\": \"2022-02-12T00:00:00.000+00:00\",\n        \"rates\": {\n            \"FJD\": 2.422533,\n            \"MXN\": 23.317166,\n            \"STD\": 23490.959675,\n            \"LVL\": 0.686514,\n            \"SCR\": 14.852127,\n            \"CDF\": 2286.90384,\n            \"BBD\": 2.30072,\n            \"GTQ\": 8.762675,\n            \"CLP\": 914.725391,\n            \"HNL\": 28.055239,\n            \"UGX\": 4013.234184,\n            \"ZAR\": 17.270026,\n            \"TND\": 3.273209,\n            \"CUC\": 1.13494,\n            \"BSD\": 1.13951,\n            \"SLL\": 13068.830651,\n            \"SDG\": 502.214977,\n            \"IQD\": 1663.084166,\n            \"CUP\": 30.075901,\n            \"GMD\": 60.26967,\n            \"TWD\": 31.675074,\n            \"RSD\": 117.557475,\n            \"DOP\": 65.155555,\n            \"KMF\": 490.351119,\n            \"MYR\": 4.754834,\n            \"FKP\": 0.826145,\n            \"XOF\": 655.962587,\n            \"GEL\": 3.325817,\n            \"BTC\": 0.00002657304,\n            \"UYU\": 49.28342,\n            \"MAD\": 10.640891,\n            \"CVE\": 110.265939,\n            \"TOP\": 2.573987,\n            \"AZN\": 1.933903,\n            \"OMR\": 0.436974,\n            \"PGK\": 4.035734,\n            \"KES\": 129.446003,\n            \"SEK\": 10.603413,\n            \"BTN\": 85.75283,\n            \"UAH\": 31.930172,\n            \"GNF\": 10274.787518,\n            \"ERN\": 17.024117,\n            \"MZN\": 72.443627,\n            \"SVC\": 9.971085,\n            \"ARS\": 120.803029,\n            \"QAR\": 4.132359,\n            \"IRR\": 47951.201335,\n            \"MRO\": 405.173266,\n            \"CNY\": 7.212092,\n            \"THB\": 37.128459,\n            \"UZS\": 12364.87532,\n            \"XPF\": 119.679801,\n            \"BDT\": 97.967634,\n            \"LYD\": 5.221644,\n            \"BMD\": 1.13494,\n            \"KWD\": 0.343036,\n            \"PHP\": 58.185496,\n            \"RUB\": 87.15588,\n            \"PYG\": 7942.967656,\n            \"ISK\": 141.890595,\n            \"JMD\": 179.104526,\n            \"COP\": 4471.338086,\n            \"MKD\": 61.630525,\n            \"USD\": 1.13494,\n            \"DZD\": 159.834734,\n            \"PAB\": 1.13951,\n            \"GGP\": 0.826145,\n            \"SGD\": 1.52957,\n            \"ETB\": 57.342188,\n            \"JEP\": 0.826145,\n            \"KGS\": 96.22541,\n            \"SOS\": 662.80515,\n            \"VEF\": 242684401354.12613,\n            \"VUV\": 129.010197,\n            \"LAK\": 12944.610258,\n            \"BND\": 1.531713,\n            \"ZMK\": 10215.823009,\n            \"XAF\": 655.962587,\n            \"LRD\": 174.331017,\n            \"XAG\": 0.0504,\n            \"CHF\": 1.051115,\n            \"HRK\": 7.531505,\n            \"ALL\": 121.441034,\n            \"DJF\": 202.861728,\n            \"ZMW\": 21.376782,\n            \"TZS\": 2635.64245,\n            \"VND\": 25748.943697,\n            \"XAU\": 0.000628,\n            \"AUD\": 1.590442,\n            \"ILS\": 3.672257,\n            \"GHS\": 7.304162,\n            \"GYD\": 238.402031,\n            \"KPW\": 1021.445879,\n            \"BOB\": 7.845367,\n            \"KHR\": 4636.539493,\n            \"MDL\": 20.282873,\n            \"IDR\": 16280.425789,\n            \"KYD\": 0.949608,\n            \"AMD\": 546.954659,\n            \"BWP\": 13.120212,\n            \"SHP\": 1.56327,\n            \"TRY\": 15.344502,\n            \"LBP\": 1723.114677,\n            \"TJS\": 12.87051,\n            \"JOD\": 0.804717,\n            \"AED\": 4.168752,\n            \"HKD\": 8.85308,\n            \"RWF\": 1184.520089,\n            \"EUR\": 1,\n            \"LSL\": 17.274215,\n            \"DKK\": 7.440329,\n            \"CAD\": 1.445448,\n            \"BGN\": 1.948435,\n            \"MMK\": 2026.069857,\n            \"MUR\": 49.660423,\n            \"NOK\": 10.093477,\n            \"SYP\": 2850.968189,\n            \"IMP\": 0.826145,\n            \"ZWL\": 365.45011,\n            \"GIP\": 0.826145,\n            \"RON\": 4.945958,\n            \"LKR\": 230.746665,\n            \"NGN\": 473.281618,\n            \"CRC\": 732.476239,\n            \"CZK\": 24.563844,\n            \"PKR\": 199.011895,\n            \"XCD\": 3.067232,\n            \"ANG\": 2.053617,\n            \"HTG\": 116.497992,\n            \"BHD\": 0.427904,\n            \"KZT\": 490.034174,\n            \"SRD\": 23.11309,\n            \"SZL\": 17.247647,\n            \"LTL\": 3.351182,\n            \"SAR\": 4.258075,\n            \"TTD\": 7.744366,\n            \"YER\": 284.019065,\n            \"MVR\": 17.535247,\n            \"AFN\": 104.900894,\n            \"INR\": 85.516006,\n            \"AWG\": 2.043175,\n            \"KRW\": 1361.694983,\n            \"NPR\": 137.204169,\n            \"JPY\": 131.536147,\n            \"MNT\": 3244.60089,\n            \"AOA\": 598.962712,\n            \"PLN\": 4.572613,\n            \"GBP\": 0.836822,\n            \"SBD\": 9.178684,\n            \"BYN\": 2.913125,\n            \"HUF\": 356.450941,\n            \"BYR\": 22244.817475,\n            \"BIF\": 2276.819393,\n            \"MWK\": 913.243779,\n            \"MGA\": 4538.018654,\n            \"XDR\": 0.811707,\n            \"BZD\": 2.29692,\n            \"BAM\": 1.955847,\n            \"EGP\": 17.832152,\n            \"MOP\": 9.154978,\n            \"NAD\": 17.27421,\n            \"NIO\": 40.400344,\n            \"PEN\": 4.260936,\n            \"NZD\": 1.706805,\n            \"WST\": 2.964852,\n            \"TMT\": 3.972289,\n            \"CLF\": 0.033151,\n            \"BRL\": 5.962951\n        }\n    },\n    \"httpStatus\": \"OK\"\n}"
+				}
+			]
+		},
+		{
+			"name": "getRate - success",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/fxrate/getRate?sourceCurrency=EUR&targetCurrency=USD",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fxrate",
+						"getRate"
+					],
+					"query": [
+						{
+							"key": "sourceCurrency",
+							"value": "EUR"
+						},
+						{
+							"key": "targetCurrency",
+							"value": "USD"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getRate",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/fxrate/getRate?sourceCurrency=EUR&targetCurrency=USD",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fxrate",
+								"getRate"
+							],
+							"query": [
+								{
+									"key": "sourceCurrency",
+									"value": "EUR"
+								},
+								{
+									"key": "targetCurrency",
+									"value": "USD"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 13 Feb 2022 19:02:16 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"base\": \"EUR\",\n        \"success\": true,\n        \"timestamp\": 1644777362,\n        \"localDateTime\": \"2022-02-13T21:36:02\",\n        \"date\": \"2022-02-13T00:00:00.000+00:00\",\n        \"rates\": {\n            \"USD\": 1.134946\n        }\n    },\n    \"httpStatus\": \"OK\"\n}"
+				}
+			]
+		},
+		{
+			"name": "currency conversion - success",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"sourceCurrency\": \"EUR\",\r\n  \"targetCurrency\": \"JPY\",\r\n  \"amount\": 20\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/conversion/convertCurrency",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"conversion",
+						"convertCurrency"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "currency conversion - success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"sourceCurrency\": \"EUR\",\r\n  \"targetCurrency\": \"USD\",\r\n  \"amount\": 250\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/conversion/convertCurrency",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"conversion",
+								"convertCurrency"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 14 Feb 2022 10:36:00 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"conversion\": {\n            \"id\": \"620a3090635545141f56da11\",\n            \"sourceCurrency\": \"EUR\",\n            \"targetCurrency\": \"USD\",\n            \"rate\": 1.130793,\n            \"amount\": 282.69825,\n            \"timestamp\": 1644833462,\n            \"localDateTime\": \"2022-02-14T13:11:02\",\n            \"date\": \"2022-02-14T00:00:00.000+00:00\"\n        }\n    },\n    \"httpStatus\": \"CREATED\"\n}"
+				},
+				{
+					"name": "currency conversion - success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"sourceCurrency\": \"EUR\",\r\n  \"targetCurrency\": \"JPY\",\r\n  \"amount\": 20\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/conversion/convertCurrency",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"conversion",
+								"convertCurrency"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 15 Feb 2022 16:15:12 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"conversion\": {\n            \"id\": \"620bd1905e4f9932e3608a02\",\n            \"sourceCurrency\": \"EUR\",\n            \"targetCurrency\": \"JPY\",\n            \"rate\": 131.316696,\n            \"amount\": 2626.33392,\n            \"timestamp\": 1644939062,\n            \"localDateTime\": \"2022-02-15T18:31:02\",\n            \"date\": \"2022-02-15T00:00:00.000+00:00\"\n        }\n    },\n    \"httpStatus\": \"CREATED\"\n}"
+				}
+			]
+		},
+		{
+			"name": "currency conversion - error",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"sourceCurrency\": \"EUR\",\r\n  \"targetCurrency\": \"TRY\",\r\n  \"amount\": 2500\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/conversion/convertCurrency",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"conversion",
+						"convertCurrency"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "currency conversion - error",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"sourceCurrency\": \"EUR\",\r\n  \"targetCurrency\": \"USD\",\r\n  \"amount\": -1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/conversion/convertCurrency",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"conversion",
+								"convertCurrency"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 15 Feb 2022 16:14:25 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"errorMessage\": \"Amount should not be less than 0.01\",\n    \"errorCode\": 1003\n}"
+				},
+				{
+					"name": "currency conversion - error",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"sourceCurrency\": \"USD\",\r\n  \"targetCurrency\": \"USD\",\r\n  \"amount\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/conversion/convertCurrency",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"conversion",
+								"convertCurrency"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 15 Feb 2022 16:15:37 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"errorMessage\": \"EUR should be used for Source Currency\",\n    \"errorCode\": 1001\n}"
+				},
+				{
+					"name": "currency conversion - error",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"sourceCurrency\": \"EUR\",\r\n  \"targetCurrency\": \"abc\",\r\n  \"amount\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/conversion/convertCurrency",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"conversion",
+								"convertCurrency"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 15 Feb 2022 16:15:58 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"errorMessage\": \"Target Currency not exists\",\n    \"errorCode\": 1001\n}"
+				},
+				{
+					"name": "currency conversion - success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"sourceCurrency\": \"EUR\",\r\n  \"targetCurrency\": \"TRY\",\r\n  \"amount\": 2500\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/conversion/convertCurrency",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"conversion",
+								"convertCurrency"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 15 Feb 2022 16:16:20 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"conversion\": {\n            \"id\": \"620bd1d45e4f9932e3608a03\",\n            \"sourceCurrency\": \"EUR\",\n            \"targetCurrency\": \"TRY\",\n            \"rate\": 15.47597,\n            \"amount\": 38689.925,\n            \"timestamp\": 1644939062,\n            \"localDateTime\": \"2022-02-15T18:31:02\",\n            \"date\": \"2022-02-15T00:00:00.000+00:00\"\n        }\n    },\n    \"httpStatus\": \"CREATED\"\n}"
+				}
+			]
+		},
+		{
+			"name": "get Transaction by id - success",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"sourceCurrency\": \"EUR\",\r\n  \"targetCurrency\": \"USD\",\r\n  \"amount\": 250\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/conversion/getTransactionById?transactionId=620a3013635545141f56da10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"conversion",
+						"getTransactionById"
+					],
+					"query": [
+						{
+							"key": "transactionId",
+							"value": "620a3013635545141f56da10"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get Transaction by id - success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"sourceCurrency\": \"EUR\",\r\n  \"targetCurrency\": \"USD\",\r\n  \"amount\": 250\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/conversion/getTransactionById?transactionId=620a3013635545141f56da10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"conversion",
+								"getTransactionById"
+							],
+							"query": [
+								{
+									"key": "transactionId",
+									"value": "620a3013635545141f56da10"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 14 Feb 2022 14:50:47 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"conversion\": {\n            \"id\": \"620a3013635545141f56da10\",\n            \"sourceCurrency\": \"EUR\",\n            \"targetCurrency\": \"TRY\",\n            \"rate\": 15.348372,\n            \"amount\": 1534.8372,\n            \"timestamp\": 1644833462,\n            \"localDateTime\": \"2022-02-14T13:11:02\",\n            \"date\": \"2022-02-14T00:00:00.000+00:00\"\n        }\n    },\n    \"httpStatus\": \"OK\"\n}"
+				}
+			]
+		},
+		{
+			"name": "get Transaction by id - not found error",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"sourceCurrency\": \"EUR\",\r\n  \"targetCurrency\": \"USD\",\r\n  \"amount\": 250\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/conversion/getTransactionById?transactionId=123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"conversion",
+						"getTransactionById"
+					],
+					"query": [
+						{
+							"key": "transactionId",
+							"value": "123"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get Transaction by id - not found error",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"sourceCurrency\": \"EUR\",\r\n  \"targetCurrency\": \"USD\",\r\n  \"amount\": 250\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/conversion/getTransactionById?transactionId=123",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"conversion",
+								"getTransactionById"
+							],
+							"query": [
+								{
+									"key": "transactionId",
+									"value": "123"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 14 Feb 2022 14:56:54 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"errorMessage\": \"No Data found by id : 123\",\n    \"errorCode\": 1202\n}"
+				}
+			]
+		},
+		{
+			"name": "getRate -  error",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/fxrate/getRate?sourceCurrency=TRY&targetCurrency=USD",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fxrate",
+						"getRate"
+					],
+					"query": [
+						{
+							"key": "sourceCurrency",
+							"value": "TRY"
+						},
+						{
+							"key": "targetCurrency",
+							"value": "USD"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getRate error",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/fxrate/getRate?sourceCurrency=TRY&targetCurrency=USD",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fxrate",
+								"getRate"
+							],
+							"query": [
+								{
+									"key": "sourceCurrency",
+									"value": "TRY"
+								},
+								{
+									"key": "targetCurrency",
+									"value": "USD"
+								}
+							]
+						}
+					},
+					"status": "See Other",
+					"code": 303,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 13 Feb 2022 19:01:51 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"errorMessage\": \"[400 Bad Request] during [GET] to [http://api.exchangeratesapi.io/v1/latest?access_key=bbd7d4745e0545c06fcf7428d583a6b9&base=TRY&symbols=USD] [ExchangeRatesApiClient#getExchangeRate(String,String,String)]: [{\\\"error\\\":{\\\"code\\\":\\\"base_currency_access_restricted\\\",\\\"message\\\":\\\"An unexpected error ocurred. [Technical Support: support@apilayer.com]\\\"}}]\",\n    \"errorCode\": 1101\n}"
+				}
+			]
+		},
+		{
+			"name": "getConversionListByInterval - success",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"pageSize\": 2,\r\n  \"pageNumber\": 0,\r\n  \"from\": \"2022-02-13T22:29:41.096Z\",\r\n  \"to\": \"2022-02-14T22:29:41.096Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/conversion/getConversionListByInterval",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"conversion",
+						"getConversionListByInterval"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getConversionListByInterval",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"pageSize\": 2,\r\n    \"pageNumber\": 0,\r\n    \"from\": \"2022-02-13T22:29:41.096Z\",\r\n    \"to\": \"2022-02-14T22:29:41.096Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/conversion/getConversionListByInterval",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"conversion",
+								"getConversionListByInterval"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 14 Feb 2022 22:32:08 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"conversion\": [\n            {\n                \"id\": \"620a3013635545141f56da10\",\n                \"sourceCurrency\": \"EUR\",\n                \"targetCurrency\": \"TRY\",\n                \"rate\": 15.348372,\n                \"amount\": 1534.8372,\n                \"timestamp\": 1644833462,\n                \"localDateTime\": \"2022-02-14T13:11:02\",\n                \"date\": \"2022-02-14T00:00:00.000+00:00\"\n            },\n            {\n                \"id\": \"620a3090635545141f56da11\",\n                \"sourceCurrency\": \"EUR\",\n                \"targetCurrency\": \"USD\",\n                \"rate\": 1.130793,\n                \"amount\": 282.69825,\n                \"timestamp\": 1644833462,\n                \"localDateTime\": \"2022-02-14T13:11:02\",\n                \"date\": \"2022-02-14T00:00:00.000+00:00\"\n            }\n        ]\n    },\n    \"httpStatus\": \"OK\"\n}"
+				}
+			]
+		},
+		{
+			"name": "getConversionListByInterval -error",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"pageSize\": -2,\r\n  \"pageNumber\": 0,\r\n  \"from\": \"2022-02-12T22:29:41.096Z\",\r\n  \"to\": \"2022-02-14T22:29:41.096Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/conversion/getConversionListByInterval",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"conversion",
+						"getConversionListByInterval"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getConversionListByInterval -error",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"pageSize\": -2,\r\n  \"pageNumber\": 0,\r\n  \"from\": \"2022-02-12T22:29:41.096Z\",\r\n  \"to\": \"2022-02-14T22:29:41.096Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/conversion/getConversionListByInterval",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"conversion",
+								"getConversionListByInterval"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 14 Feb 2022 23:42:55 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"errorMessage\": \"pagesize should not be less than 1\",\n    \"errorCode\": 1003\n}"
+				},
+				{
+					"name": "getConversionListByInterval -error",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"pageSize\": 2,\r\n  \"pageNumber\": 0,\r\n  \"from\": \"2022-02-13\",\r\n  \"to\": \"2022-02-14T22:29:41.096Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/conversion/getConversionListByInterval",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"conversion",
+								"getConversionListByInterval"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 14 Feb 2022 23:42:14 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"errorMessage\": \"Text '2022-02-13' could not be parsed at index 10\",\n    \"errorCode\": 1005\n}"
+				}
+			]
+		},
+		{
+			"name": "getConversionListByDate - success",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"pageSize\": 4,\r\n  \"pageNumber\": 0,\r\n  \"date\": \"2022-02-14\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/conversion/getConversionListByDate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"conversion",
+						"getConversionListByDate"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getConversionListByDate - success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"pageSize\": 4,\r\n  \"pageNumber\": 0,\r\n  \"date\": \"2022-02-14\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/conversion/getConversionListByDate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"conversion",
+								"getConversionListByDate"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 15 Feb 2022 16:11:33 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"conversion\": [\n            {\n                \"id\": \"620a3013635545141f56da10\",\n                \"sourceCurrency\": \"EUR\",\n                \"targetCurrency\": \"TRY\",\n                \"rate\": 15.348372,\n                \"amount\": 1534.8372,\n                \"timestamp\": 1644833462,\n                \"localDateTime\": \"2022-02-14T13:11:02\",\n                \"date\": \"2022-02-14T00:00:00.000+00:00\"\n            },\n            {\n                \"id\": \"620a3090635545141f56da11\",\n                \"sourceCurrency\": \"EUR\",\n                \"targetCurrency\": \"USD\",\n                \"rate\": 1.130793,\n                \"amount\": 282.69825,\n                \"timestamp\": 1644833462,\n                \"localDateTime\": \"2022-02-14T13:11:02\",\n                \"date\": \"2022-02-14T00:00:00.000+00:00\"\n            },\n            {\n                \"id\": \"620a6d906cbb164696a37bc3\",\n                \"sourceCurrency\": \"EUR\",\n                \"targetCurrency\": \"JPY\",\n                \"rate\": 130.613247,\n                \"amount\": 43494.211251,\n                \"timestamp\": 1644849962,\n                \"localDateTime\": \"2022-02-14T17:46:02\",\n                \"date\": \"2022-02-14T00:00:00.000+00:00\"\n            },\n            {\n                \"id\": \"620a6da06cbb164696a37bc4\",\n                \"sourceCurrency\": \"EUR\",\n                \"targetCurrency\": \"USD\",\n                \"rate\": 1.130934,\n                \"amount\": 28.27335,\n                \"timestamp\": 1644849962,\n                \"localDateTime\": \"2022-02-14T17:46:02\",\n                \"date\": \"2022-02-14T00:00:00.000+00:00\"\n            }\n        ]\n    },\n    \"httpStatus\": \"OK\"\n}"
+				}
+			]
+		},
+		{
+			"name": "getConversionListByDate - success (with long date format)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"pageSize\": 2,\r\n  \"pageNumber\": 0,\r\n  \"date\": \"2022-02-14T00:00:00.000+00:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/conversion/getConversionListByDate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"conversion",
+						"getConversionListByDate"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getConversionListByDate - success - shortDate",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"pageSize\": 4,\r\n  \"pageNumber\": 0,\r\n  \"date\": \"2022-02-14\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/conversion/getConversionListByDate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"conversion",
+								"getConversionListByDate"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 15 Feb 2022 16:11:33 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"conversion\": [\n            {\n                \"id\": \"620a3013635545141f56da10\",\n                \"sourceCurrency\": \"EUR\",\n                \"targetCurrency\": \"TRY\",\n                \"rate\": 15.348372,\n                \"amount\": 1534.8372,\n                \"timestamp\": 1644833462,\n                \"localDateTime\": \"2022-02-14T13:11:02\",\n                \"date\": \"2022-02-14T00:00:00.000+00:00\"\n            },\n            {\n                \"id\": \"620a3090635545141f56da11\",\n                \"sourceCurrency\": \"EUR\",\n                \"targetCurrency\": \"USD\",\n                \"rate\": 1.130793,\n                \"amount\": 282.69825,\n                \"timestamp\": 1644833462,\n                \"localDateTime\": \"2022-02-14T13:11:02\",\n                \"date\": \"2022-02-14T00:00:00.000+00:00\"\n            },\n            {\n                \"id\": \"620a6d906cbb164696a37bc3\",\n                \"sourceCurrency\": \"EUR\",\n                \"targetCurrency\": \"JPY\",\n                \"rate\": 130.613247,\n                \"amount\": 43494.211251,\n                \"timestamp\": 1644849962,\n                \"localDateTime\": \"2022-02-14T17:46:02\",\n                \"date\": \"2022-02-14T00:00:00.000+00:00\"\n            },\n            {\n                \"id\": \"620a6da06cbb164696a37bc4\",\n                \"sourceCurrency\": \"EUR\",\n                \"targetCurrency\": \"USD\",\n                \"rate\": 1.130934,\n                \"amount\": 28.27335,\n                \"timestamp\": 1644849962,\n                \"localDateTime\": \"2022-02-14T17:46:02\",\n                \"date\": \"2022-02-14T00:00:00.000+00:00\"\n            }\n        ]\n    },\n    \"httpStatus\": \"OK\"\n}"
+				},
+				{
+					"name": "getConversionListByDate - success - long date",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"pageSize\": 2,\r\n  \"pageNumber\": 0,\r\n  \"date\": \"2022-02-14T00:00:00.000+00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/conversion/getConversionListByDate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"conversion",
+								"getConversionListByDate"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 15 Feb 2022 16:12:17 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"conversion\": [\n            {\n                \"id\": \"620a3013635545141f56da10\",\n                \"sourceCurrency\": \"EUR\",\n                \"targetCurrency\": \"TRY\",\n                \"rate\": 15.348372,\n                \"amount\": 1534.8372,\n                \"timestamp\": 1644833462,\n                \"localDateTime\": \"2022-02-14T13:11:02\",\n                \"date\": \"2022-02-14T00:00:00.000+00:00\"\n            },\n            {\n                \"id\": \"620a3090635545141f56da11\",\n                \"sourceCurrency\": \"EUR\",\n                \"targetCurrency\": \"USD\",\n                \"rate\": 1.130793,\n                \"amount\": 282.69825,\n                \"timestamp\": 1644833462,\n                \"localDateTime\": \"2022-02-14T13:11:02\",\n                \"date\": \"2022-02-14T00:00:00.000+00:00\"\n            }\n        ]\n    },\n    \"httpStatus\": \"OK\"\n}"
+				},
+				{
+					"name": "getConversionListByDate - error",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"pageSize\": 2,\r\n  \"pageNumber\": 0\r\n  \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/conversion/getConversionListByDate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"conversion",
+								"getConversionListByDate"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 15 Feb 2022 16:13:34 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"errorMessage\": \"date sholud not be null and format should be : 2022-02-14\",\n    \"errorCode\": 1003\n}"
+				}
+			]
+		}
+	]
+}

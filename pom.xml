@@ -24,6 +24,7 @@
 			**/datamodel/**
 			**/enums/**,
 			**/exception/**,
+			**/external/**,
 			**/*Entity.java,
 			**/*Repository.java,
 			**/Response*.java,
@@ -59,11 +60,6 @@
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-test</artifactId>
-			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -117,8 +113,13 @@
 			<version>3.1</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-test</artifactId>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
-	
+
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -146,8 +147,8 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>forex-rate-converter</finalName>
 	</build>
-	
 	<repositories>
 		<repository>
 			<id>spring-milestones</id>
